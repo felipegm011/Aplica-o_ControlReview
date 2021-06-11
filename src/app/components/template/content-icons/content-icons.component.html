@@ -1,0 +1,39 @@
+<!--param 1 - qtd colunas, 2 altura das linhas, 4 espaço entre os grids-->
+    <mat-grid-list cols="3" rowHeight="150px" class="grid" gutterSize="10px">
+        
+        <mat-grid-tile id="grid1" routerLink="painel/cliente">
+            <a mat-list-item>
+                <i class="material-icons" routerLink="painel/cliente">
+                        person
+                </i>
+            </a>
+        </mat-grid-tile>
+        <mat-grid-tile id="grid2" colspan="2" routerLink="painel/veiculo">
+            <a>
+                <i class="material-icons" routerLink="painel/veiculo">
+                    sports_motorsports
+                </i>
+            </a>
+        </mat-grid-tile>
+        <mat-grid-tile id="grid3" colspan="2" routerLink="manutencao-preventiva">
+            <a mat-list-item>
+                <i class="material-icons" routerLink="manutencao-preventiva"> 
+                    settings_suggest
+                </i>
+            </a>
+        </mat-grid-tile>
+        <mat-grid-tile id="grid4" routerLink="ordem-servico">
+            <a mat-list-item>
+                <i class="material-icons"  routerLink="ordem-servico">
+                    miscellaneous_services
+                </i>
+            </a>
+        </mat-grid-tile>
+        <mat-grid-tile colspan="3" id="grid5"  routerLink="relatorios">
+            <a mat-list-item>
+                <i class="material-icons"  routerLink="relatorios">
+                    description
+                </i>
+            </a>
+        </mat-grid-tile>
+    </mat-grid-list>
