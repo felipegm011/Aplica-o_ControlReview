@@ -35,7 +35,8 @@ import { ListaClienteComponent } from './components/lista-cliente/lista-cliente.
 import { VeiculoCrudComponent } from './components/veiculo-crud/veiculo-crud.component';
 import { ListaVeiculoComponent } from './components/lista-veiculo/lista-veiculo.component';
 import { MatTableModule } from '@angular/material/table';
-
+import {MatSelectModule} from '@angular/material/select';
+import {MatDatepickerModule} from '@angular/material/datepicker';
 // transformando formatação sepradores de casas decimais na utilização de PIPES 
 import localePt from '@angular/common/locales/pt';
 import {registerLocaleData} from '@angular/common';
@@ -77,7 +78,9 @@ registerLocaleData(localePt);
     MatButtonModule,
     MatSnackBarModule,
     HttpClientModule,
-    MatTableModule
+    MatTableModule,
+    MatSelectModule,
+    MatDatepickerModule
   ],
 
   // definindo formatação como pt-BR

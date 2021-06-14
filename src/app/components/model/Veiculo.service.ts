@@ -3,6 +3,7 @@ import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { HttpClient } from '@angular/common/http';
 import{ MatSnackBar} from '@angular/material/snack-bar';
+import { VeiculoCrudComponent } from '../veiculo-crud/veiculo-crud.component';
 
 @Injectable({
   providedIn: 'root'
@@ -23,6 +24,10 @@ export class VeiculoService {
 
   createVeiculo(veiculo: Veiculo): Observable<Veiculo>{
     return this.http.post<Veiculo>(this.urlbase, veiculo)
+  }
+
+  read(): Observable<Veiculo[]>{
+    return this.http.get<Veiculo[]>(this.urlbase)
   }
 
 }

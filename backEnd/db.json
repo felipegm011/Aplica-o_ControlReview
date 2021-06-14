@@ -1,33 +1,28 @@
 {
   "cliente": [
     {
-      
       "nome": "Felipe",
       "email": "Felipe@gmail.com",
       "telefone": "999999999",
       "id": 1
     },
     {
-      
       "nome": "JOyce",
       "email": "Joycee@gmail.com",
       "telefone": "999999999",
       "id": 2
     },
     {
-      
       "name": " Ana Clara",
       "email": "Clara@gmail.com",
       "fone": " 999999999",
       "id": 3
-      
     },
     {
       "id": 4,
       "name": " Ana Clara",
       "email": "felipe.gm001@gmail.com",
       "fone": " 999999999"
-      
     },
     {
       "name": " Ana Clara",
@@ -46,6 +41,12 @@
       "email": " JOSIAS@GMAIL.COM",
       "fone": " 000000000",
       "id": 7
+    },
+    {
+      "name": " Felipe",
+      "email": "felipe.gm001@gmail.com",
+      "fone": " 999999999",
+      "id": 8
     }
   ],
   "veiculos": [

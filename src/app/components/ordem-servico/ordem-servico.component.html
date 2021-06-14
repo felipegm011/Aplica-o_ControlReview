@@ -1,1 +1,44 @@
-<p>ordem-servico works!</p>
+<mat-card>
+  <mat-card-title>Ordem de Serviço</mat-card-title>
+
+  <form>
+    <mat-form-field appearance="outline">
+      <mat-label>Nome Cliente</mat-label>
+      <mat-select name="cliente">
+        <mat-option *ngFor="let client of clientes" [value]="client.name">
+        {{client.id}} - {{client.name}}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+
+    <mat-form-field appearance="outline">
+      <mat-label>Tipo Ordem Serviço</mat-label>
+      <mat-select name="tipoOrdemServico">
+        <mat-option *ngFor="let os of tipoOrdemServico" [value]="os">
+        {{os}}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+
+    <mat-form-field appearance="outline">
+      <mat-label>Veiculo</mat-label>
+      <mat-select name="veiculo">
+        <mat-option *ngFor="let veiculo of veiculos" [value]="veiculo.placa">
+        {{veiculo.id}} - {{veiculo.placa}}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+
+    <mat-form-field appearance="outline">
+      <mat-label>Km Entrada</mat-label>
+      <input matInput placeholder="Digite o Ano" required  name="ano">
+    </mat-form-field>
+
+    <mat-form-field class="example-full-width" appearance="outline">
+      <mat-label>Observação</mat-label>
+      <input matInput #message maxlength="256" placeholder="Observação">
+      <mat-hint align="start"><strong>Digite sua Observação</strong> </mat-hint>
+      <mat-hint align="end">{{message.value.length}} / 256</mat-hint>
+    </mat-form-field>
+</form>
+</mat-card>

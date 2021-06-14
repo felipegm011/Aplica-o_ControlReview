@@ -1,4 +1,10 @@
+import { VeiculoService } from './../model/Veiculo.service';
 import { Component, OnInit } from '@angular/core';
+import { Cliente } from '../model/cliente.model';
+import { ClienteService } from '../model/cliente.service';
+import { Veiculo } from '../model/veiculo.model';
+
+
 
 @Component({
   selector: 'app-ordem-servico',
@@ -7,9 +13,22 @@ import { Component, OnInit } from '@angular/core';
 })
 export class OrdemServicoComponent implements OnInit {
 
-  constructor() { }
+  
+  clientes: Cliente[]
+  veiculos: Veiculo[]
+
+  tipoOrdemServico: string[] = ['REVISÃO', 'TROCA DE OLEO', 'TROCA DE PEÇA']
+  
+  constructor(private clienteService: ClienteService, private serviceVeiculo: VeiculoService) { }
 
   ngOnInit(): void {
+    this.clienteService.read().subscribe(clienteEvent =>{
+      this.clientes = clienteEvent
+    })
+
+    this.serviceVeiculo.read().subscribe(veiculo =>{
+      this.veiculos = veiculo
+    })
   }
 
 }
