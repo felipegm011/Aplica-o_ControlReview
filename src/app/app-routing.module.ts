@@ -23,10 +23,10 @@ const routes: Routes = [{
   path: "veiculos",
   component: CadastroVeiculoComponent
 },{
-  path: "manutencao-preventiva",
+  path: "manutencaopreventiva",
   component: ManutencaoPrenventComponent
-},{
-  path: "ordem-servico",
+},{   
+  path: "ordemservico",
   component: OrdemServicoComponent
 },{
   path: "relatorios",
