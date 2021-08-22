@@ -1,22 +1,22 @@
 <mat-card>
     <mat-card-title>Cadastro Cliente</mat-card-title>
-    <form>
+    <form #myForm="ngForm">
         <mat-form-field appearance="outline">
             <mat-label>Nome</mat-label>
-            <input matInput placeholder="Digite seu nome" required [(ngModel)] = "client.name" name="name">
+            <input matInput  required [(ngModel)] = "client.name"  name="name" >   
         </mat-form-field>
         <mat-form-field appearance="outline">
             <mat-label>E-mail</mat-label>
-            <input matInput placeholder="Digite seu e-mail" required [(ngModel)] ="client.email" name="email">
+            <input matInput  required [(ngModel)] ="client.email" name="email" >
         </mat-form-field>
         <mat-form-field appearance="outline">
             <mat-label>Telefone</mat-label>
-            <input matInput placeholder="Digite seu Telefone" required [(ngModel)] ="client.fone" name="fone ">
+            <input matInput  required [(ngModel)] ="client.fone" name="fone" >
         </mat-form-field>
     </form>
-    <button mat-raised-button class="salvar" color="primary" (click)="createClient()">
+    <button mat-raised-button class="salvar" color="primary" (click)="createClient()"> 
         Salvar
-    </button>
+    </button> 
 
     <!--fazendo o bindg e chamando função -->
     <button mat-raised-button (click)="cancel()">

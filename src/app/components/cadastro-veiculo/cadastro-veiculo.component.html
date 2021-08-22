@@ -1,21 +1,21 @@
 <mat-card>
     <mat-card-title>Cadastro Veiculo</mat-card-title>
-    <form>
+    <form #myForm="ngForm">
         <mat-form-field appearance="outline">
             <mat-label>Placa</mat-label>
-            <input matInput placeholder="Digite a Placa" required [(ngModel)] = "veiculo.placa" name="placa">
+            <input matInput required [(ngModel)] = "veiculo.placa" name="placa">
         </mat-form-field>
         <mat-form-field appearance="outline">
             <mat-label>Modelo</mat-label>
-            <input matInput placeholder="Digite o Modelo" required [(ngModel)] ="veiculo.modelo" name="modelo">
+            <input matInput required [(ngModel)] ="veiculo.modelo" name="modelo">
         </mat-form-field>
         <mat-form-field appearance="outline">
             <mat-label>Ano</mat-label>
-            <input matInput placeholder="Digite o Ano" required [(ngModel)] ="veiculo.ano" name="ano">
+            <input matInput required [(ngModel)] ="veiculo.ano" name="ano">
         </mat-form-field>
         <mat-form-field appearance="outline">
             <mat-label>Cor</mat-label>
-            <input matInput placeholder="Digite a Cor" [(ngModel)] ="veiculo.cor" name="cor">
+            <input matInput [(ngModel)] ="veiculo.cor" name="cor">
         </mat-form-field>
     </form>
     <button mat-raised-button class="salvar" color="primary" (click)="createVeiculo()">

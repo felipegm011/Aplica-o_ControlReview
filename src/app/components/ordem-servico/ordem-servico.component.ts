@@ -5,6 +5,9 @@ import { Component, OnInit } from '@angular/core';
 import { Cliente } from '../model/cliente.model';
 import { ClienteService } from '../model/cliente.service';
 import { Veiculo } from '../model/veiculo.model';
+import { Router } from '@angular/router';
+import { ViewChild } from '@angular/core';
+import { NgForm } from '@angular/forms';
 
 
 
@@ -27,10 +30,12 @@ export class OrdemServicoComponent implements OnInit {
     observacao: ' '
   }
 
+  @ViewChild('myForm') myForm: NgForm;
+
   tipoOrdemServico: string[] = ['REVISÃO', 'TROCA DE OLEO', 'TROCA DE PEÇA']
   
   constructor(private clienteService: ClienteService, private serviceVeiculo: VeiculoService,
-              private ordemservicoService: OrdemServicoService) { }
+              private ordemservicoService: OrdemServicoService,private router: Router) { }
 
   ngOnInit(): void {
     this.clienteService.read().subscribe(clienteEvent =>{
@@ -45,7 +50,12 @@ export class OrdemServicoComponent implements OnInit {
   createOrdemServico(): void{
     this.ordemservicoService.create(this.ordemservico).subscribe(os =>{
       this.ordemservicoService.showMessage("Ordem de Serviço Cadastrada com Sucesso")
+      this.myForm.reset()
+      //this.router.navigate(['painel/ordemServico'])
     })
   }
 
+  cancel():void{
+      this.router.navigate(['painel/ordemServico'])
+  }
 }

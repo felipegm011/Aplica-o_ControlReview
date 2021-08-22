@@ -27,5 +27,9 @@ export class OrdemServicoService {
     return this.http.post<OrdemServico>(this.urlBase,ordemservico)
   }
 
+  read(): Observable<OrdemServico[]>{
+    return this.http.get<OrdemServico[]>(this.urlBase);
+  }
+
 
 }

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { Cliente } from '../model/cliente.model';
 import { ClienteService } from '../model/cliente.service';
 
@@ -14,7 +15,7 @@ export class ListaClienteComponent implements OnInit {
   displayedColumns = ['id','name','email','fone']
 
 
-  constructor(private clienteService: ClienteService) { }
+  constructor(private clienteService: ClienteService, private router: Router) { }
 
   
   // metodo é executado depois que todo componente é criado
@@ -22,6 +23,10 @@ export class ListaClienteComponent implements OnInit {
     this.clienteService.read().subscribe(clienteEvent =>{
       this.cliente = clienteEvent
     })
+  }
+
+  cancel(): void{
+    this.router.navigate(['painel/cliente'])
   }
 
 }

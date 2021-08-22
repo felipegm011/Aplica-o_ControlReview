@@ -40,6 +40,8 @@ import {MatDatepickerModule} from '@angular/material/datepicker';
 // transformando formatação sepradores de casas decimais na utilização de PIPES 
 import localePt from '@angular/common/locales/pt';
 import {registerLocaleData} from '@angular/common';
+import { OrdemServicoCrudComponent } from './components/ordem-servico-crud/ordem-servico-crud.component';
+import { ListaOrdemServicoComponent } from './components/lista-ordem-servico/lista-ordem-servico.component';
 
 registerLocaleData(localePt);
 
@@ -61,7 +63,9 @@ registerLocaleData(localePt);
     ClienteCrudComponent,
     ListaClienteComponent,
     VeiculoCrudComponent,
-    ListaVeiculoComponent
+    ListaVeiculoComponent,
+    OrdemServicoCrudComponent,
+    ListaOrdemServicoComponent
   ], 
   imports: [
     BrowserModule,

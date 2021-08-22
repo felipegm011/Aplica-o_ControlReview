@@ -2,6 +2,8 @@ import { Router } from '@angular/router';
 import { Component, OnInit } from '@angular/core';
 import { VeiculoService } from './../model/Veiculo.service';
 import { Veiculo } from './../model/veiculo.model';
+import { ViewChild } from '@angular/core';
+import { NgForm } from '@angular/forms';
 
 
 @Component({
@@ -23,10 +25,14 @@ export class CadastroVeiculoComponent implements OnInit {
     cor: ' '
   }
 
+  @ViewChild('myForm') myForm: NgForm;
+
+
   createVeiculo(): void{
     this.veiculoService.createVeiculo(this.veiculo).subscribe(() =>{
     this.veiculoService.showMessage("Veiculo Cadastrado com Sucesso!!!")
-    console.log(this.veiculo)
+    this.myForm.reset()
+    //this.router.navigate(['painel/veiculo'])
     })
   }
 
