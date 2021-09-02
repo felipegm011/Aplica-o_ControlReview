@@ -1,7 +1,7 @@
-import { Cliente } from './../model/cliente.model';
+import { Cliente } from '../../../model/cliente.model';
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { ClienteService } from '../model/cliente.service';
+import { ClienteService } from '../../../services/cliente.service';
 import { ViewChild } from '@angular/core';
 import { NgForm } from '@angular/forms';
 import { ElementRef } from '@angular/core';

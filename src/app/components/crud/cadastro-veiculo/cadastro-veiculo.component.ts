@@ -1,7 +1,7 @@
 import { Router } from '@angular/router';
 import { Component, OnInit } from '@angular/core';
-import { VeiculoService } from './../model/Veiculo.service';
-import { Veiculo } from './../model/veiculo.model';
+import { VeiculoService } from '../../../services/Veiculo.service';
+import { Veiculo } from '../../../model/veiculo.model';
 import { ViewChild } from '@angular/core';
 import { NgForm } from '@angular/forms';
 

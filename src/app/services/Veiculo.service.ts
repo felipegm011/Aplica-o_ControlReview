@@ -1,9 +1,9 @@
-import { Veiculo } from './veiculo.model';
+import { Veiculo } from '../model/veiculo.model';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { HttpClient } from '@angular/common/http';
 import{ MatSnackBar} from '@angular/material/snack-bar';
-import { VeiculoCrudComponent } from '../veiculo-crud/veiculo-crud.component';
+import { VeiculoCrudComponent } from '../components/gerencimento/veiculo-crud/veiculo-crud.component';
 
 @Injectable({
   providedIn: 'root'

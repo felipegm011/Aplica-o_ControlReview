@@ -1,5 +1,5 @@
 import { Observable } from 'rxjs';
-import { OrdemServico } from './ordemservico.model';
+import { OrdemServico } from '../model/ordemservico.model';
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 

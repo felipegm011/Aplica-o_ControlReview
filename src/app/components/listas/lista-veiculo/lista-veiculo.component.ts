@@ -1,7 +1,7 @@
-import { VeiculoService } from './../model/Veiculo.service';
+import { VeiculoService } from '../../../services/Veiculo.service';
 import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
-import { Veiculo } from '../model/veiculo.model';
+import { Veiculo } from '../../../model/veiculo.model';
 import { Router } from '@angular/router';
 
 @Component({

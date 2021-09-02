@@ -1,5 +1,5 @@
-import { OrdemServico } from './../model/ordemservico.model';
-import { OrdemServicoService } from './../model/ordemservico.service';
+import { OrdemServico } from '../../../model/ordemservico.model';
+import { OrdemServicoService } from '../../../services/ordemservico.service';
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 

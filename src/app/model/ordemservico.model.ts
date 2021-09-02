@@ -8,4 +8,5 @@ export interface OrdemServico{
     veiculo: Veiculo
     km: string
     observacao: string
+    dataSys: string
 }

@@ -24,7 +24,7 @@
       <mat-label>Veiculo</mat-label>
       <mat-select name="veiculo" [(ngModel)] = "ordemservico.veiculo">
         <mat-option *ngFor="let veiculo of veiculos" [value]="veiculo.id">
-        {{veiculo.id}} - {{veiculo.placa}}
+        {{veiculo.id}} - {{veiculo.placa}} 
         </mat-option>
       </mat-select>
     </mat-form-field>

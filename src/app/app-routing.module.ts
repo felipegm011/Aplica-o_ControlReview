@@ -1,18 +1,18 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
-import {CadastroClienteComponent} from './components/cadastro-cliente/cadastro-cliente.component';
+import {CadastroClienteComponent} from './components/crud/cadastro-cliente/cadastro-cliente.component';
 import {ContentIconsComponent} from './components/template/content-icons/content-icons.component';
-import { CadastroVeiculoComponent } from './components/cadastro-veiculo/cadastro-veiculo.component';
-import { ManutencaoPrenventComponent } from './components/manutencao-prenvent/manutencao-prenvent.component';
-import { OrdemServicoComponent } from './components/ordem-servico/ordem-servico.component';
-import { RelatorioComponent } from './components/relatorio/relatorio.component';
-import {ClienteCrudComponent} from './components/cliente-crud/cliente-crud.component';
-import {ListaClienteComponent} from './components/lista-cliente/lista-cliente.component';
-import { VeiculoCrudComponent} from './components/veiculo-crud/veiculo-crud.component';
-import { ListaVeiculoComponent} from './components/lista-veiculo/lista-veiculo.component';
-import { OrdemServicoCrudComponent } from './components/ordem-servico-crud/ordem-servico-crud.component';
-import { ListaOrdemServicoComponent } from './components/lista-ordem-servico/lista-ordem-servico.component';
+import { CadastroVeiculoComponent } from './components/crud/cadastro-veiculo/cadastro-veiculo.component';
+import { ManutencaoPrenventComponent } from './components/crud/manutencao-prenvent/manutencao-prenvent.component';
+import { OrdemServicoComponent } from './components/crud/ordem-servico/ordem-servico.component';
+import { RelatorioComponent } from './components/listas/relatorio/relatorio.component';
+import {ClienteCrudComponent} from './components/gerencimento/cliente-crud/cliente-crud.component';
+import {ListaClienteComponent} from './components/listas/lista-cliente/lista-cliente.component';
+import { VeiculoCrudComponent} from './components/gerencimento/veiculo-crud/veiculo-crud.component';
+import { ListaVeiculoComponent} from './components/listas/lista-veiculo/lista-veiculo.component';
+import { OrdemServicoCrudComponent } from './components/gerencimento/ordem-servico-crud/ordem-servico-crud.component';
+import { ListaOrdemServicoComponent } from './components/listas/lista-ordem-servico/lista-ordem-servico.component';
 
 //array com rotas da aplicação
 const routes: Routes = [{

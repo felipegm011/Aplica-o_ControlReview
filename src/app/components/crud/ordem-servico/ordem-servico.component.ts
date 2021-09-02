@@ -1,10 +1,10 @@
-import { OrdemServico } from './../model/ordemservico.model';
-import { OrdemServicoService } from './../model/ordemservico.service';
-import { VeiculoService } from './../model/Veiculo.service';
+import { OrdemServico } from '../../../model/ordemservico.model';
+import { OrdemServicoService } from '../../../services/ordemservico.service';
+import { VeiculoService } from '../../../services/Veiculo.service';
 import { Component, OnInit } from '@angular/core';
-import { Cliente } from '../model/cliente.model';
-import { ClienteService } from '../model/cliente.service';
-import { Veiculo } from '../model/veiculo.model';
+import { Cliente } from '../../../model/cliente.model';
+import { ClienteService } from '../../../services/cliente.service';
+import { Veiculo } from '../../../model/veiculo.model';
 import { Router } from '@angular/router';
 import { ViewChild } from '@angular/core';
 import { NgForm } from '@angular/forms';
@@ -18,16 +18,21 @@ import { NgForm } from '@angular/forms';
 })
 export class OrdemServicoComponent implements OnInit {
 
-  
+   data = new Date()
+
+
   clientes: Cliente[]
   veiculos: Veiculo[]
+
+  dataFormatada = (this.data.getDate() + " " + this.data.getMonth() + " " + this.data.getFullYear())
 
   ordemservico: OrdemServico = {
     cliente: null,
     tipoOrdemServico: ' ',
     veiculo: null,
     km: ' ',
-    observacao: ' '
+    observacao: ' ',
+    dataSys: this.dataFormatada 
   }
 
   @ViewChild('myForm') myForm: NgForm;

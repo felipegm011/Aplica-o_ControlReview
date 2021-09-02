@@ -11,7 +11,7 @@ import {MatButtonModule} from '@angular/material/button';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import { FooterComponent } from './components/template/footer/footer.component';
 import { NavComponent } from './components/template/nav/nav.component';
-import { CadastroClienteComponent } from './components/cadastro-cliente/cadastro-cliente.component';
+import { CadastroClienteComponent } from './components/crud/cadastro-cliente/cadastro-cliente.component';
 import { ContentIconsComponent } from './components/template/content-icons/content-icons.component';
 
 
@@ -19,10 +19,10 @@ import {MatSidenavModule} from '@angular/material/sidenav';
 import {MatListModule}from '@angular/material/list';
 
 import {MatGridListModule} from '@angular/material/grid-list';
-import { CadastroVeiculoComponent } from './components/cadastro-veiculo/cadastro-veiculo.component';
-import { ManutencaoPrenventComponent } from './components/manutencao-prenvent/manutencao-prenvent.component';
-import { OrdemServicoComponent } from './components/ordem-servico/ordem-servico.component';
-import { RelatorioComponent } from './components/relatorio/relatorio.component';
+import { CadastroVeiculoComponent } from './components/crud/cadastro-veiculo/cadastro-veiculo.component';
+import { ManutencaoPrenventComponent } from './components/crud/manutencao-prenvent/manutencao-prenvent.component';
+import { OrdemServicoComponent } from './components/crud/ordem-servico/ordem-servico.component';
+import { RelatorioComponent } from './components/listas/relatorio/relatorio.component';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material/input';
 import {FormsModule} from '@angular/forms';
@@ -30,18 +30,18 @@ import {MatCardModule} from '@angular/material/card';
 import {MatSnackBarModule} from '@angular/material/snack-bar';
 import {HttpClientModule} from '@angular/common/http';
 import { ColorButtonNavDirective } from './directives/color-button-nav.directive';
-import { ClienteCrudComponent } from './components/cliente-crud/cliente-crud.component';
-import { ListaClienteComponent } from './components/lista-cliente/lista-cliente.component';
-import { VeiculoCrudComponent } from './components/veiculo-crud/veiculo-crud.component';
-import { ListaVeiculoComponent } from './components/lista-veiculo/lista-veiculo.component';
+import { ClienteCrudComponent } from './components/gerencimento/cliente-crud/cliente-crud.component';
+import { ListaClienteComponent } from './components/listas/lista-cliente/lista-cliente.component';
+import { VeiculoCrudComponent } from './components/gerencimento/veiculo-crud/veiculo-crud.component';
+import { ListaVeiculoComponent } from './components/listas/lista-veiculo/lista-veiculo.component';
 import { MatTableModule } from '@angular/material/table';
 import {MatSelectModule} from '@angular/material/select';
 import {MatDatepickerModule} from '@angular/material/datepicker';
 // transformando formatação sepradores de casas decimais na utilização de PIPES 
 import localePt from '@angular/common/locales/pt';
 import {registerLocaleData} from '@angular/common';
-import { OrdemServicoCrudComponent } from './components/ordem-servico-crud/ordem-servico-crud.component';
-import { ListaOrdemServicoComponent } from './components/lista-ordem-servico/lista-ordem-servico.component';
+import { OrdemServicoCrudComponent } from './components/gerencimento/ordem-servico-crud/ordem-servico-crud.component';
+import { ListaOrdemServicoComponent } from './components/listas/lista-ordem-servico/lista-ordem-servico.component';
 
 registerLocaleData(localePt);
 

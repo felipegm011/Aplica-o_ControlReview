@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import{ MatSnackBar} from '@angular/material/snack-bar';
-import { Cliente } from './cliente.model';
+import { Cliente } from '../model/cliente.model';
 import { Observable } from 'rxjs';
 
 @Injectable({

@@ -1,22 +1,10 @@
 {
   "cliente": [
     {
-      "name": " felipe",
-      "email": " minusulo.teste@gmail.com",
+      "name": " Ana Clara",
+      "email": " JOSIAS@GMAIL.COM",
       "fone": " 999999999",
       "id": 1
-    },
-    {
-      "name": " felipe",
-      "email": " minusulo.teste@gmail.com",
-      "fone": " 999999999",
-      "id": 2
-    },
-    {
-      "name": " felipe",
-      "email": " minusulo.teste@gmail.com",
-      "fone": " 999999999",
-      "id": 3
     }
   ],
   "veiculos": [
@@ -43,6 +31,33 @@
       "km": " 1000",
       "observacao": "testando endpoint",
       "id": 1
+    },
+    {
+      "cliente": 2,
+      "tipoOrdemServico": "TROCA DE OLEO",
+      "veiculo": 2,
+      "km": " ",
+      "observacao": " sss",
+      "dataSys": "2021-08-22T20:08:58.879Z",
+      "id": 2
+    },
+    {
+      "cliente": 2,
+      "tipoOrdemServico": "REVISÃO",
+      "veiculo": 2,
+      "km": null,
+      "observacao": " jj",
+      "dataSys": "2021-08-22T20:08:58.879Z",
+      "id": 3
+    },
+    {
+      "cliente": 1,
+      "tipoOrdemServico": "TROCA DE OLEO",
+      "veiculo": 1,
+      "km": " ",
+      "observacao": " jj",
+      "dataSys": "22 7 2021",
+      "id": 4
     }
   ]
 }
