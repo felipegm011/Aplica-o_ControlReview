@@ -37,7 +37,8 @@ export class OrdemServicoComponent implements OnInit {
 
   @ViewChild('myForm') myForm: NgForm;
 
-  tipoOrdemServico: string[] = ['REVISÃO', 'TROCA DE OLEO', 'TROCA DE PEÇA']
+  tipoOrdemServico: string[] = ['REVISÃO COMPLETA', 'MANUTENÇÃO PREVENTIVA', 
+                                'TROCA DE PEÇA OU OLEO','OUTRO']
   
   constructor(private clienteService: ClienteService, private serviceVeiculo: VeiculoService,
               private ordemservicoService: OrdemServicoService,private router: Router) { }

@@ -17,7 +17,7 @@ import { ContentIconsComponent } from './components/template/content-icons/conte
 
 import {MatSidenavModule} from '@angular/material/sidenav';
 import {MatListModule}from '@angular/material/list';
-
+import {MatCheckboxModule} from '@angular/material/checkbox';
 import {MatGridListModule} from '@angular/material/grid-list';
 import { CadastroVeiculoComponent } from './components/crud/cadastro-veiculo/cadastro-veiculo.component';
 import { ManutencaoPrenventComponent } from './components/crud/manutencao-prenvent/manutencao-prenvent.component';
@@ -42,7 +42,8 @@ import localePt from '@angular/common/locales/pt';
 import {registerLocaleData} from '@angular/common';
 import { OrdemServicoCrudComponent } from './components/gerencimento/ordem-servico-crud/ordem-servico-crud.component';
 import { ListaOrdemServicoComponent } from './components/listas/lista-ordem-servico/lista-ordem-servico.component';
-
+import { RevisaoComponent } from './components/crud/revisao/revisao.component';
+import { TrocaComponent } from './components/crud/troca/troca.component';
 registerLocaleData(localePt);
 
 
@@ -65,7 +66,9 @@ registerLocaleData(localePt);
     VeiculoCrudComponent,
     ListaVeiculoComponent,
     OrdemServicoCrudComponent,
-    ListaOrdemServicoComponent
+    ListaOrdemServicoComponent,
+    RevisaoComponent,
+    TrocaComponent
   ], 
   imports: [
     BrowserModule,
@@ -84,7 +87,8 @@ registerLocaleData(localePt);
     HttpClientModule,
     MatTableModule,
     MatSelectModule,
-    MatDatepickerModule
+    MatDatepickerModule,
+    MatCheckboxModule
   ],
 
   // definindo formatação como pt-BR

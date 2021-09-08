@@ -21,6 +21,20 @@
       "ano": 2021,
       "cor": " BRANCA",
       "id": 2
+    },
+    {
+      "placa": " OFF3548",
+      "modelo": " HR",
+      "ano": 2021,
+      "cor": " BRANCA",
+      "id": 3
+    },
+    {
+      "placa": " OFF3548",
+      "modelo": " HR",
+      "ano": 2021,
+      "cor": " BRANCA",
+      "id": 4
     }
   ],
   "ordemservico": [
@@ -58,6 +72,41 @@
       "observacao": " jj",
       "dataSys": "22 7 2021",
       "id": 4
+    },
+    {
+      "cliente": 1,
+      "tipoOrdemServico": "MANUTENÇÃO PREVENTIVA",
+      "veiculo": 1,
+      "km": " ",
+      "observacao": " ",
+      "dataSys": "8 8 2021",
+      "id": 5
+    }
+  ],
+  "manutencaopreventiva": [
+    {
+      "ordemservico": 3,
+      "embreagem": false,
+      "freio": false,
+      "luzespainel": false,
+      "niveloleo": false,
+      "kittracao": false,
+      "carburador": false,
+      "pneu": false,
+      "observacao": " teste",
+      "id": 1
+    },
+    {
+      "ordemservico": 3,
+      "embreagem": false,
+      "freio": false,
+      "luzespainel": false,
+      "niveloleo": false,
+      "kittracao": false,
+      "carburador": false,
+      "pneu": false,
+      "observacao": " teste",
+      "id": 2
     }
   ]
 }

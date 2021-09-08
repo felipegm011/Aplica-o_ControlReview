@@ -13,6 +13,8 @@ import { VeiculoCrudComponent} from './components/gerencimento/veiculo-crud/veic
 import { ListaVeiculoComponent} from './components/listas/lista-veiculo/lista-veiculo.component';
 import { OrdemServicoCrudComponent } from './components/gerencimento/ordem-servico-crud/ordem-servico-crud.component';
 import { ListaOrdemServicoComponent } from './components/listas/lista-ordem-servico/lista-ordem-servico.component';
+import { RevisaoComponent } from './components/crud/revisao/revisao.component';
+import { TrocaComponent } from './components/crud/troca/troca.component';
 
 //array com rotas da aplicação
 const routes: Routes = [{
@@ -51,6 +53,12 @@ const routes: Routes = [{
 },{
   path: "lista/ordemServico",
   component: ListaOrdemServicoComponent
+},{
+  path: "revisao",
+  component: RevisaoComponent
+},{
+  path: "troca",
+  component: TrocaComponent
 }];
 
 @NgModule({
